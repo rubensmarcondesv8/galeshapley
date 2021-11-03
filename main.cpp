@@ -1,5 +1,6 @@
 #include <iostream>
-#include <fstream> 
+#include <fstream>
+#include <queue>
 
 int main(){
   unsigned n = 5
@@ -24,10 +25,12 @@ int main(){
 
   for(int i = 0; i < n; i++){
 	  free(hPref[i]);
-     free(sPref[i]);
+    free(sPref[i]);
   }
 
 	free(hPref);
   free(sPref);
+  free(M);
+  free(S);
 
 }
